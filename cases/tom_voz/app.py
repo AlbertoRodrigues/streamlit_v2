@@ -16,26 +16,25 @@ st.markdown(
     @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Instrument+Serif:ital@0;1&display=swap');
 
     :root {
-        --bg: #0f1115;
-        --panel: rgba(24, 27, 34, 0.82);
-        --panel-strong: #161a22;
-        --line: rgba(238, 226, 201, 0.10);
-        --text: #f4ead7;
-        --muted: #b7ab95;
-        --accent: #ff8c61;
-        --accent-2: #63d1b4;
-        --accent-3: #e0b86f;
-        --shadow: 0 22px 60px rgba(0, 0, 0, 0.34);
+        --bg: #09111f;
+        --panel: rgba(13, 22, 39, 0.86);
+        --panel-strong: #0d1728;
+        --line: rgba(169, 192, 230, 0.14);
+        --text: #eef4ff;
+        --muted: #95a8c7;
+        --accent: #79a8ff;
+        --accent-2: #9cc6ff;
+        --accent-soft: rgba(121, 168, 255, 0.14);
+        --shadow: 0 22px 60px rgba(0, 0, 0, 0.38);
         --radius-xl: 28px;
         --radius-lg: 22px;
-        --radius-md: 16px;
     }
 
     .stApp {
         background:
-            radial-gradient(circle at top left, rgba(255, 140, 97, 0.16), transparent 28%),
-            radial-gradient(circle at top right, rgba(99, 209, 180, 0.14), transparent 24%),
-            linear-gradient(180deg, #11141b 0%, #0b0d12 100%);
+            radial-gradient(circle at top left, rgba(84, 127, 214, 0.18), transparent 28%),
+            radial-gradient(circle at top right, rgba(27, 66, 140, 0.22), transparent 24%),
+            linear-gradient(180deg, #07111f 0%, #0b1528 100%);
         color: var(--text);
         font-family: "Space Grotesk", sans-serif;
     }
@@ -64,17 +63,17 @@ st.markdown(
         height: 52px;
         border-radius: 999px;
         padding: 0 1.3rem;
-        background: rgba(28, 32, 40, 0.92);
-        border: 1px solid rgba(244, 234, 215, 0.08);
+        background: rgba(16, 27, 46, 0.92);
+        border: 1px solid rgba(169, 192, 230, 0.12);
         box-shadow: none;
     }
 
     [data-testid="stTabs"] [aria-selected="true"] {
-        background: linear-gradient(135deg, #ff8c61 0%, #d96043 100%);
+        background: linear-gradient(135deg, #5f8ff0 0%, #396fd8 100%);
     }
 
     [data-testid="stTabs"] [aria-selected="true"] p {
-        color: #fff4ea;
+        color: #f5f9ff;
     }
 
     [data-testid="stMetric"] {
@@ -94,22 +93,20 @@ st.markdown(
     }
 
     div[data-testid="stSelectbox"],
-    div[data-testid="stNumberInput"] > div,
     div[data-testid="stDataFrame"] {
         background: transparent;
     }
 
-    div[data-baseweb="select"] > div,
-    div[data-baseweb="input"] > div {
-        background: rgba(20, 24, 31, 0.96);
+    div[data-baseweb="select"] > div {
+        background: rgba(12, 21, 36, 0.96);
         border-radius: 16px;
-        border: 1px solid rgba(244, 234, 215, 0.10);
+        border: 1px solid rgba(169, 192, 230, 0.12);
     }
 
     .stButton > button {
         border-radius: 16px;
-        border: 1px solid rgba(244, 234, 215, 0.08);
-        background: rgba(20, 24, 31, 0.96);
+        border: 1px solid rgba(169, 192, 230, 0.10);
+        background: rgba(12, 21, 36, 0.96);
         color: var(--text);
         font-weight: 600;
         min-height: 48px;
@@ -119,7 +116,7 @@ st.markdown(
     }
 
     .stButton > button:hover {
-        border-color: rgba(255, 140, 97, 0.40);
+        border-color: rgba(121, 168, 255, 0.44);
         transform: translateY(-1px);
     }
 
@@ -128,8 +125,8 @@ st.markdown(
         overflow: hidden;
         padding: 2rem;
         border-radius: var(--radius-xl);
-        background: linear-gradient(135deg, rgba(19,23,30,0.92) 0%, rgba(25,29,38,0.96) 100%);
-        border: 1px solid rgba(244, 234, 215, 0.08);
+        background: linear-gradient(135deg, rgba(12,22,40,0.96) 0%, rgba(18,36,67,0.96) 56%, rgba(27,54,102,0.94) 100%);
+        border: 1px solid rgba(169, 192, 230, 0.10);
         box-shadow: var(--shadow);
     }
 
@@ -139,7 +136,7 @@ st.markdown(
         inset: auto -60px -80px auto;
         width: 220px;
         height: 220px;
-        background: radial-gradient(circle, rgba(255,140,97,0.28) 0%, rgba(255,140,97,0) 72%);
+        background: radial-gradient(circle, rgba(156,198,255,0.28) 0%, rgba(156,198,255,0) 72%);
     }
 
     .eyebrow {
@@ -168,49 +165,20 @@ st.markdown(
     }
 
     .panel-card {
-        padding: 1.35rem;
+        padding: 1.1rem 1.25rem;
         border-radius: var(--radius-lg);
-        background: linear-gradient(180deg, rgba(18,22,29,0.92), rgba(23,27,35,0.90));
+        background: linear-gradient(180deg, rgba(11,20,35,0.94), rgba(16,27,46,0.92));
         border: 1px solid var(--line);
         box-shadow: var(--shadow);
-    }
-
-    .panel-card-strong {
-        padding: 1.4rem;
-        border-radius: var(--radius-lg);
-        background: linear-gradient(180deg, rgba(20,24,31,0.96), rgba(29,34,44,0.94));
-        border: 1px solid rgba(244, 234, 215, 0.08);
-        box-shadow: var(--shadow);
-    }
-
-    .section-title {
-        font-size: 1.05rem;
-        font-weight: 700;
-        margin-bottom: 0.35rem;
-    }
-
-    .section-copy {
-        color: var(--muted);
-        font-size: 0.96rem;
-        line-height: 1.55;
     }
 
     .question-card {
         padding: 1.5rem;
         border-radius: var(--radius-xl);
-        background: linear-gradient(135deg, rgba(17,21,28,0.98), rgba(28,33,42,0.96));
-        border: 1px solid rgba(244, 234, 215, 0.10);
+        background: linear-gradient(135deg, rgba(10,19,34,0.98), rgba(18,31,55,0.96));
+        border: 1px solid rgba(169, 192, 230, 0.12);
         box-shadow: var(--shadow);
         margin-top: 1rem;
-    }
-
-    .question-label {
-        color: var(--accent-2);
-        font-size: 0.82rem;
-        letter-spacing: 0.14em;
-        text-transform: uppercase;
-        font-weight: 700;
-        margin-bottom: 0.65rem;
     }
 
     .question-title {
@@ -229,26 +197,18 @@ st.markdown(
     .pill {
         padding: 0.55rem 0.9rem;
         border-radius: 999px;
-        background: rgba(255, 140, 97, 0.12);
-        color: #ffb392;
+        background: var(--accent-soft);
+        color: #b8d5ff;
         font-size: 0.9rem;
         font-weight: 700;
-    }
-
-    .dataframe-shell {
-        padding: 1rem;
-        border-radius: var(--radius-xl);
-        background: linear-gradient(180deg, rgba(18,22,29,0.94), rgba(24,28,37,0.92));
-        border: 1px solid var(--line);
-        box-shadow: var(--shadow);
     }
 
     .response-shell {
         margin-bottom: 1rem;
         padding: 1rem 1.1rem;
         border-radius: 18px;
-        background: linear-gradient(180deg, rgba(17,21,28,0.96), rgba(25,30,39,0.94));
-        border: 1px solid rgba(244, 234, 215, 0.08);
+        background: linear-gradient(180deg, rgba(9,18,32,0.98), rgba(15,27,48,0.95));
+        border: 1px solid rgba(169, 192, 230, 0.10);
     }
 
     .response-model {
@@ -264,38 +224,42 @@ st.markdown(
         color: var(--text);
         line-height: 1.65;
         font-size: 0.98rem;
-        margin-bottom: 0.9rem;
-    }
-
-    .score-label {
-        color: var(--muted);
-        font-size: 0.82rem;
-        font-weight: 700;
-        margin-bottom: 0.45rem;
-        text-transform: uppercase;
-        letter-spacing: 0.12em;
     }
 
     [data-testid="stPills"] button {
-        background: rgba(255, 140, 97, 0.08);
-        border: 1px solid rgba(255, 140, 97, 0.18);
+        background: rgba(121, 168, 255, 0.08);
+        border: 1px solid rgba(121, 168, 255, 0.18);
         border-radius: 14px;
         color: var(--text);
     }
 
     [data-testid="stPills"] button[aria-pressed="true"] {
-        background: rgba(99, 209, 180, 0.18);
-        border-color: rgba(99, 209, 180, 0.38);
+        background: rgba(121, 168, 255, 0.18);
+        border-color: rgba(121, 168, 255, 0.42);
     }
 
-    .status-note {
+    .section-title {
+        font-size: 1.05rem;
+        font-weight: 700;
+        margin-bottom: 0.2rem;
+    }
+
+    .section-copy {
         color: var(--muted);
-        font-size: 0.95rem;
-        margin-top: 0.2rem;
+        font-size: 0.96rem;
+        line-height: 1.55;
+    }
+
+    .dataframe-shell {
+        padding: 1rem;
+        border-radius: var(--radius-xl);
+        background: linear-gradient(180deg, rgba(10,19,34,0.96), rgba(17,29,50,0.94));
+        border: 1px solid var(--line);
+        box-shadow: var(--shadow);
     }
 
     [data-testid="stProgressBar"] > div > div {
-        background: linear-gradient(90deg, #63d1b4 0%, #ff8c61 100%);
+        background: linear-gradient(90deg, #7db0ff 0%, #3f79eb 100%);
     }
     </style>
     """,
@@ -432,14 +396,9 @@ pendentes = total - respondidas
 progresso = respondidas / total if total else 0
 
 st.markdown(
-    f"""
+    """
     <section class="hero-card">
-        <div class="eyebrow">Painel de avaliação</div>
-        <h1 class="hero-title">Comparativo de respostas sobre investimentos com mais presença de palco.</h1>
-        <p class="hero-subtitle">
-            Uma interface de avaliação criada para comparar tons de resposta entre modelos de linguagem
-            em perguntas fictícias sobre investimentos, com leitura forte para demo e apresentação.
-        </p>
+        <h1 class="hero-title">Avaliação de respostas sobre tom de voz em investimentos.</h1>
     </section>
     """,
     unsafe_allow_html=True,
@@ -457,32 +416,19 @@ aba1, aba2 = st.tabs(["Coleta", "Resultados"])
 
 
 with aba1:
-    info_col, reset_col = st.columns([4.3, 1.4])
+    header_col, reset_col = st.columns([5.4, 1.1])
 
-    with info_col:
+    with header_col:
         st.markdown(
             """
             <div class="panel-card">
-                <div class="section-title">Sessão de coleta</div>
-                <div class="section-copy">
-                    Navegue pelas perguntas, atribua notas às respostas embaralhadas e salve o progresso.
-                    As respostas são curtas de propósito, para facilitar a análise de tom, clareza e postura.
-                </div>
+                <div class="section-title">Coleta</div>
             </div>
             """,
             unsafe_allow_html=True,
         )
 
     with reset_col:
-        st.markdown(
-            """
-            <div class="panel-card-strong">
-                <div class="section-title">Controle</div>
-                <div class="status-note">Use o reset apenas quando quiser reiniciar toda a rodada.</div>
-            </div>
-            """,
-            unsafe_allow_html=True,
-        )
         if st.button("Resetar base"):
             st.session_state.confirm_reset = True
 
@@ -511,15 +457,6 @@ with aba1:
             if st.button("Cancelar reset"):
                 st.session_state.confirm_reset = False
 
-    st.markdown(
-        """
-        <div class="panel-card" style="margin-top: 1rem;">
-            <div class="section-title">Progresso da rodada</div>
-            <div class="section-copy">A barra abaixo acompanha o avanço da avaliação em tempo real.</div>
-        </div>
-        """,
-        unsafe_allow_html=True,
-    )
     st.progress(progresso)
     st.caption(f"{respondidas} de {total} perguntas respondidas")
 
@@ -529,45 +466,34 @@ with aba1:
     lista_perguntas = list(perguntas.keys())
     labels = [f"Concluída • {p}" if p in st.session_state.respostas else p for p in lista_perguntas]
 
-    select_col, nav_info_col = st.columns([2.1, 1.3])
+    select_col, status_col = st.columns([3.2, 0.8])
     with select_col:
         selected_label = st.selectbox(
-            "Escolha uma pergunta",
+            "Pergunta",
             labels,
             index=st.session_state.current_index,
+            label_visibility="collapsed",
         )
 
     st.session_state.current_index = labels.index(selected_label)
     pergunta_selecionada = lista_perguntas[st.session_state.current_index]
 
-    with nav_info_col:
+    with status_col:
         st.markdown(
             f"""
             <div class="panel-card">
-                <div class="section-title">Posição atual</div>
-                <div class="section-copy">Pergunta {st.session_state.current_index + 1} de {len(lista_perguntas)}</div>
+                <div class="section-title">{st.session_state.current_index + 1}/{len(lista_perguntas)}</div>
             </div>
             """,
             unsafe_allow_html=True,
         )
 
-    nav_col1, nav_col2, nav_col3 = st.columns([1, 2.4, 1])
+    nav_col1, nav_col2, nav_col3 = st.columns([1, 3.4, 1])
     with nav_col1:
         if st.button("Anterior"):
             if st.session_state.current_index > 0:
                 st.session_state.current_index -= 1
                 st.rerun()
-
-    with nav_col2:
-        st.markdown(
-            """
-            <div class="panel-card-strong" style="text-align: center;">
-                <div class="section-title">Navegação da rodada</div>
-                <div class="status-note">Avance ou retorne sem perder os dados já preenchidos.</div>
-            </div>
-            """,
-            unsafe_allow_html=True,
-        )
 
     with nav_col3:
         if st.button("Próxima"):
@@ -579,12 +505,10 @@ with aba1:
         st.markdown(
             f"""
             <section class="question-card">
-                <div class="question-label">Pergunta ativa</div>
                 <h2 class="question-title">{pergunta_selecionada}</h2>
                 <div class="pill-row">
-                    <span class="pill">Avaliação de tom de voz</span>
-                    <span class="pill">Pontuação discreta de 1 a 3</span>
-                    <span class="pill">Latência em segundos</span>
+                    <span class="pill">Tom de voz</span>
+                    <span class="pill">Notas 1 a 3</span>
                 </div>
             </section>
             """,
@@ -606,18 +530,6 @@ with aba1:
             for r in st.session_state.respostas[pergunta_selecionada]:
                 valores_anteriores[r["texto"]] = r["valor"]
 
-        st.markdown(
-            """
-            <div class="panel-card" style="margin-top: 1rem; margin-bottom: 1rem;">
-                <div class="section-title">Atribuição de notas</div>
-                <div class="section-copy">
-                    Avalie cada resposta com calma. Agora a escolha é feita com três opções discretas e os valores podem se repetir livremente.
-                </div>
-            </div>
-            """,
-            unsafe_allow_html=True,
-        )
-
         valores = []
         for i, item in enumerate(itens_embaralhados):
             valor_anterior = valores_anteriores.get(item["texto"], 1.0)
@@ -629,7 +541,6 @@ with aba1:
                 <div class="response-shell">
                     <div class="response-model">Tom de Voz {i + 1}</div>
                     <div class="response-copy">{item["texto"]}</div>
-                    <div class="score-label">Escolha a nota</div>
                 </div>
                 """,
                 unsafe_allow_html=True,
@@ -666,10 +577,8 @@ with aba2:
     st.markdown(
         """
         <div class="panel-card">
-            <div class="section-title">Leitura dos resultados</div>
-            <div class="section-copy">
-                Visualize o detalhamento bruto e a consolidação por modelo em uma apresentação mais limpa e executiva.
-            </div>
+            <div class="section-title">Resultados</div>
+            <div class="section-copy">Modelo e latência ficam visíveis nesta etapa para análise comparativa.</div>
         </div>
         """,
         unsafe_allow_html=True,
@@ -704,7 +613,6 @@ with aba2:
             """
             <div class="dataframe-shell" style="margin-top: 1rem;">
                 <div class="section-title">Resultados detalhados</div>
-                <div class="section-copy">Modelo e latência ficam visíveis nesta etapa para análise comparativa.</div>
             </div>
             """,
             unsafe_allow_html=True,

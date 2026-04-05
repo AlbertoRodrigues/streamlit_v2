@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="Avatar humano">
+  <defs>
+    <radialGradient id="bg" cx="35%" cy="28%" r="80%">
+      <stop offset="0%" stop-color="#274b87"/>
+      <stop offset="100%" stop-color="#0f1c33"/>
+    </radialGradient>
+    <linearGradient id="skin" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f1c7a8"/>
+      <stop offset="100%" stop-color="#d89b74"/>
+    </linearGradient>
+    <linearGradient id="shirt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#5ca2ff"/>
+      <stop offset="100%" stop-color="#1b4f9c"/>
+    </linearGradient>
+  </defs>
+  <circle cx="128" cy="128" r="122" fill="url(#bg)"/>
+  <circle cx="128" cy="96" r="42" fill="url(#skin)"/>
+  <path d="M78 186c10-28 32-44 50-44s40 16 50 44v26H78z" fill="url(#shirt)"/>
+  <path d="M86 86c4-23 23-39 43-39s39 12 47 35c-9-5-20-8-32-8-19 0-36 5-58 12z" fill="#1f2f4a"/>
+  <circle cx="112" cy="98" r="5" fill="#10213a"/>
+  <circle cx="144" cy="98" r="5" fill="#10213a"/>
+  <path d="M115 116c9 7 17 7 26 0" fill="none" stroke="#9a5f46" stroke-width="5" stroke-linecap="round"/>
+  <path d="M66 214c9-24 27-43 62-43s53 19 62 43" fill="none" stroke="#8fc1ff" stroke-opacity=".35" stroke-width="6" stroke-linecap="round"/>
+</svg>

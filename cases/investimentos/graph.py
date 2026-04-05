@@ -16,6 +16,7 @@ Regras:
 - Sempre destaque riscos quando falar de estratégias
 - Prefira explicações educacionais em vez de recomendações diretas
 - Se não souber, diga explicitamente que não sabe
+- Seja breve e simples na sua respostas. Não use mais do que 3 frases.
 """
 
 
@@ -59,7 +60,7 @@ class InvestmentState(MessagesState):
 
 def create_graph():
     llm = ChatOpenAI(
-        model="gpt-4.1-mini",
+        model="gpt-5.4-mini",
         temperature=0,
     )
 
